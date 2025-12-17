@@ -34,7 +34,7 @@ const Footer = () => {
                     <div>
                         <div className="mb-4">
                             <img
-                                src="/images/logo.png"
+                                src="/images/RAR Logo.png"
                                 alt="Rent A Ride Logo"
                                 className="h-20 w-auto object-contain"
                             />
