@@ -212,7 +212,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h4 className="font-bold text-white mb-2">8. Kilometer Limit</h4>
-                            <p>Each rental includes 100 kilometers within 24 hours. Additional kilometers beyond the limit will be charged at ₹3 per kilometer.</p>
+                            <p>Each rental includes limited kilometers within 24 hours. Additional kilometers beyond the limit will be charged at ₹3 per kilometer.</p>
                         </div>
                     </div>
                 </div>

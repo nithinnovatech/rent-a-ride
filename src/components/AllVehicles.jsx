@@ -52,7 +52,7 @@ const AllVehicles = () => {
         },
         {
             name: 'Ather Rizta',
-            variant: 'Violet',
+            variant: 'blue',
             image: '/images/Blue-Mono.png',
             kmRange: 80,
             price: 599,
@@ -130,7 +130,7 @@ const AllVehicles = () => {
                                 <img
                                     src={bike.image}
                                     alt={bike.name}
-                                    className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-300"
+                                    className={`w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-300 ${bike.name === 'Ather Rizta' || bike.name === 'Royal Enfield Himalayan' ? 'scale-x-[-1]' : ''}`}
                                 />
                                 <div className="absolute top-4 left-4">
                                     <span className="inline-block px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-gray-700">

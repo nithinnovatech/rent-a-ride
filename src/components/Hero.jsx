@@ -80,20 +80,20 @@ const Hero = () => {
                             Experience the freedom of self-driving bike rentals. Choose from our wide range of bikes and hit the road!
                         </p>
 
+
+
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-2 md:gap-3 justify-center items-center animate-slide-up animation-delay-200 px-4">
                             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto inline-flex items-center justify-center text-[10px] sm:text-sm md:text-base px-3 py-2.5 sm:px-5 md:px-6 md:py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                                 <FaWhatsapp className="text-sm md:text-lg mr-1 sm:mr-2" />
                                 <span className="whitespace-nowrap">Book on WhatsApp</span>
                             </a>
-                            <button
-                                onClick={() => navigate('/bikes')}
-                                className="w-full sm:w-auto inline-flex items-center justify-center text-[10px] sm:text-sm md:text-base px-3 py-2.5 sm:px-5 md:px-6 md:py-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white text-white font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                            >
-                                <span className="whitespace-nowrap">View Available Bikes</span>
-                                <FaArrowDown className="text-xs md:text-base ml-1 sm:ml-2" />
-                            </button>
+                            <a href={`tel:${phoneNumber}`} className="w-full sm:w-auto inline-flex items-center justify-center text-[10px] sm:text-sm md:text-base px-3 py-2.5 sm:px-5 md:px-6 md:py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                <FaPhone className="text-sm md:text-lg mr-1 sm:mr-2" />
+                                <span className="whitespace-nowrap">Call Now</span>
+                            </a>
                         </div>
+
 
                     </div>
                 </div>

@@ -98,6 +98,15 @@ body {
     @apply w-full h-64 object-contain bg-gradient-to-br from-gray-50 to-gray-100 transition-transform duration-500 group-hover:scale-110;
   }
 
+  .bike-card-image-flipped {
+    @apply w-full h-64 object-contain bg-gradient-to-br from-gray-50 to-gray-100 transition-transform duration-500 group-hover:scale-110;
+    transform: scaleX(-1);
+  }
+
+  .bike-card-image-flipped:hover {
+    transform: scaleX(-1) scale(1.1);
+  }
+
   /* Input Styles */
   .input-primary {
     @apply block w-full px-4 py-3 border-2 border-gray-200 rounded-xl shadow-sm focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200;

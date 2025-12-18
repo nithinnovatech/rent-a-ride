@@ -1,9 +1,11 @@
 import React from 'react';
-import { FaMotorcycle, FaCheckCircle, FaTools, FaHeadset } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import { FaMotorcycle, FaCheckCircle, FaTools, FaHeadset, FaTruck } from 'react-icons/fa';
 import { GiFullMotorcycleHelmet } from 'react-icons/gi';
 import { MdSecurity } from 'react-icons/md';
 
 const Services = () => {
+    const navigate = useNavigate();
     const services = [
         {
             icon: <FaMotorcycle className="text-5xl" />,
@@ -13,7 +15,7 @@ const Services = () => {
             features: ['Flexible rental periods', 'Wide range of bikes', '100+ km included']
         },
         {
-            icon: <GiFullMotorcycleHelmet className="text-5xl" />,
+            icon: <FaTruck className="text-5xl" />,
             title: 'Flexible pickup and return services',
             description: 'Doorstep delivery within 3kms radius of town premises for your convenience.',
             gradient: 'from-accent-500 to-accent-700',
@@ -114,7 +116,7 @@ const Services = () => {
                             Book on WhatsApp
                         </a>
                         <button
-                            onClick={() => document.getElementById('bikes').scrollIntoView({ behavior: 'smooth' })}
+                            onClick={() => navigate('/bikes')}
                             className="btn-accent text-lg"
                         >
                             View Available Bikes

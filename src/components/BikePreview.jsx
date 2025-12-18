@@ -37,6 +37,18 @@ const BikePreview = () => {
             features: ['125cc Engine', 'Comfortable Ride', 'Spacious Storage']
         },
         {
+            name: 'Ather Rizta',
+            variant: 'blue',
+            image: '/images/Blue-Mono.png',
+            kmRange: 80,
+            price: 599,
+            extraKm: 3,
+            extraHour: 50,
+            category: 'Electric Scooter',
+            features: ['Electric', 'Fast Charging', 'Smart Features'],
+            isElectric: true
+        },
+        {
             name: 'Hero HF Deluxe',
             variant: 'Black & Grey',
             image: '/images/hf-deluxe.png',
@@ -46,17 +58,6 @@ const BikePreview = () => {
             extraHour: 50,
             category: 'Commuter',
             features: ['Fuel Efficient', 'Reliable', 'Low Maintenance']
-        },
-        {
-            name: 'Royal Enfield Classic 350',
-            variant: 'Stealth Black',
-            image: '/images/royal-enfield.png',
-            kmRange: 120,
-            price: 999,
-            extraKm: 4,
-            extraHour: 70,
-            category: 'Cruiser',
-            features: ['Classic Design', 'Powerful Engine', 'Long Range']
         }
     ];
 
@@ -87,11 +88,11 @@ const BikePreview = () => {
                                 style={{ animationDelay: `${index * 100}ms`, minHeight: '520px' }}
                             >
                                 {/* Image */}
-                                <div className="relative overflow-hidden h-48 flex-shrink-0">
+                                <div className="relative overflow-hidden h-48 flex-shrink-0 bg-gray-100">
                                     <img
                                         src={bike.image}
                                         alt={bike.name}
-                                        className="bike-card-image"
+                                        className={bike.name === 'Ather Rizta' ? 'bike-card-image-flipped' : 'bike-card-image'}
                                     />
                                     <div className="absolute top-3 left-3">
                                         <span className="inline-block px-2 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-gray-700">
