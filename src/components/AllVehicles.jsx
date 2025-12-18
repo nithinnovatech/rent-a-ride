@@ -53,7 +53,7 @@ const AllVehicles = () => {
         {
             name: 'Ather Rizta',
             variant: 'Violet',
-            image: '/images/ather.png',
+            image: '/images/Blue-Mono.png',
             kmRange: 80,
             price: 599,
             extraKm: 3,

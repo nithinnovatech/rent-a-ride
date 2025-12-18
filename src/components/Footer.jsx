@@ -93,7 +93,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <button
-                                    onClick={() => scrollToSection('bikes')}
+                                    onClick={() => navigate('/bikes')}
                                     className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
                                 >
                                     Our Bikes
