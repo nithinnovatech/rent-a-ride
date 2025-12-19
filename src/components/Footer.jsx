@@ -214,6 +214,10 @@ const Footer = () => {
                             <h4 className="font-bold text-white mb-2">8. Kilometer Limit</h4>
                             <p>Each rental includes limited kilometres within 24 hours. Charges will be applicable for additional kilometres beyond the limit.</p>
                         </div>
+                        <div>
+                            <h4 className="font-bold text-white mb-2">9. Cross-Border Policy</h4>
+                            <p>The rented vehicle cannot be taken outside the permitted city/state limits without prior approval from Rent a Ride.</p>
+                        </div>
                     </div>
                 </div>
 
